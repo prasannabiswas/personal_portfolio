@@ -5,3 +5,4 @@ class Project(models.Model):
     description = models.CharField(max_length=200)
     image = models.ImageField(upload_to='media/portfolio/images/')
     url = models.URLField(blank=True)
+

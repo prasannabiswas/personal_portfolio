@@ -1,3 +1,6 @@
+{% extends 'portfolio/base.html' %}
+{% block content %}
+
 <h1>Hi</h1>
 
 {% load static %}
@@ -7,7 +10,7 @@
 
 <img src="{% static 'portfolio/Lk-Tag-Type4.png' %}" height="240" width="300">
 
-<a href="{% static 'portfolio/Invitation.pdf' %}">POLICY</a>
+<!-- <a href="{% static 'portfolio/Invitation.pdf' %}">POLICY</a> -->
 
 {% for project in projects %}
 <h2> {{ project.title }} </h2>
@@ -17,3 +20,5 @@
 <a href="{{ project.url }}"> LINK </a>
 {% endif %}
 {% endfor %}
+
+{% endblock %}
